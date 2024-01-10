@@ -22,12 +22,9 @@ curl http://localhost:3000/api/data
 Description
 Cette route renvoie des données sur une base aérienne française.
 
-<<<<<<< HEAD
 Utilisation
-=======
 
 Utilisation 
->>>>>>> bb275168bb6358f086dce200ad1e8f9c179f1ef1
 
 curl http://localhost:3000/api/airbase
 3. /api/aircraftCarrier
@@ -49,10 +46,7 @@ Obtenir des données sur un avion de chasse :
 
 curl http://localhost:3000/api/data
 Obtenir des données sur une base aérienne :
-<<<<<<< HEAD
 
-=======
->>>>>>> bb275168bb6358f086dce200ad1e8f9c179f1ef1
 curl http://localhost:3000/api/airbase
 Obtenir des données sur un porte-avions :
 

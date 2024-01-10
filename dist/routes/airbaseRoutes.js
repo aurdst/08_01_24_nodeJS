@@ -1,5 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+const express_1 = require("express");
+const router = (0, express_1.Router)();
 // Route pour les données sur la base aérienne
 router.get('/airbase', (req, res) => {
     const airbaseData = {
@@ -11,3 +13,4 @@ router.get('/airbase', (req, res) => {
     };
     res.json(airbaseData);
 });
+exports.default = router;

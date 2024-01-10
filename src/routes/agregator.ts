@@ -8,10 +8,14 @@ const aggregatorRoutes = Router();
 
 aggregatorRoutes.get('/aggregator', async (req: Request, res: Response) => {
   try {
+    const dataPromise = dataRoutes;
+    const airbasePromise = airbaseRoutes;
+    const aircraftCarrierPromise = aircraftCarrierRoutes;
+
     const [data, airbase, aircraftCarrier] = await Promise.all([
-      dataRoutes.getData(),
-      airbaseRoutes.getAirbaseData(),
-      aircraftCarrierRoutes.getAircraftCarrierData(),
+      dataPromise,
+      airbasePromise,
+      aircraftCarrierPromise,
     ]);
 
     const aggregatedData = {

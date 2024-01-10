@@ -15,4 +15,4 @@ router.get('/airbase', (req: Request, res: Response) => {
   res.json(airbaseData);
 });
 
-module.exports = router;
+export default router;

@@ -17,4 +17,4 @@ router.get('/aircraftCarrier', (req: Request, res: Response) => {
     res.json(aircraftCarrierData);
   });
   
-  module.exports = router;
+export default router;

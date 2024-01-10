@@ -20,10 +20,13 @@ const aircraftCarrierRoutes_1 = __importDefault(require("./aircraftCarrierRoutes
 const aggregatorRoutes = (0, express_1.Router)();
 aggregatorRoutes.get('/aggregator', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        const dataPromise = dataRoutes_1.default;
+        const airbasePromise = airbaseRoutes_1.default;
+        const aircraftCarrierPromise = aircraftCarrierRoutes_1.default;
         const [data, airbase, aircraftCarrier] = yield Promise.all([
-            dataRoutes_1.default.getData(),
-            airbaseRoutes_1.default.getAirbaseData(),
-            aircraftCarrierRoutes_1.default.getAircraftCarrierData(),
+            dataPromise,
+            airbasePromise,
+            aircraftCarrierPromise,
         ]);
         const aggregatedData = {
             data,
