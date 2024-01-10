@@ -1,5 +1,7 @@
 import { Router, Request, Response } from 'express';
 
+const router = Router();
+
 router.get('/aircraftCarrier', (req: Request, res: Response) => {
     const aircraftCarrierData = {
       nom: 'Charles de Gaulle',

@@ -1,5 +1,7 @@
 import { Router, Request, Response } from 'express';
 
+const router = Router();
+
 // Route pour les données sur la base aérienne
 router.get('/airbase', (req: Request, res: Response) => {
   const airbaseData = {
@@ -12,3 +14,5 @@ router.get('/airbase', (req: Request, res: Response) => {
 
   res.json(airbaseData);
 });
+
+module.exports = router;

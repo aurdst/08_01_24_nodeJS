@@ -16,49 +16,41 @@ Description
 Cette route renvoie des données sur un avion de chasse français.
 
 Utilisation
-bash
-Copy code
+
 curl http://localhost:3000/api/data
 2. /api/airbase
 Description
 Cette route renvoie des données sur une base aérienne française.
 
 Utilisation
-bash
-Copy code
+
 curl http://localhost:3000/api/airbase
 3. /api/aircraftCarrier
 Description
 Cette route renvoie des données sur un porte-avions français.
 
 Utilisation
-bash
-Copy code
+
 curl http://localhost:3000/api/aircraftCarrier
 4. /api/aggregator
 Description
 Cette route agrège les données des routes /api/data, /api/airbase, et /api/aircraftCarrier.
 
 Utilisation
-bash
-Copy code
+
 curl http://localhost:3000/api/aggregator
 Exemples d'utilisation
 Obtenir des données sur un avion de chasse :
-bash
-Copy code
+
 curl http://localhost:3000/api/data
 Obtenir des données sur une base aérienne :
-bash
-Copy code
+
 curl http://localhost:3000/api/airbase
 Obtenir des données sur un porte-avions :
-bash
-Copy code
+
 curl http://localhost:3000/api/aircraftCarrier
 Obtenir des données agrégées :
-bash
-Copy code
+
 curl http://localhost:3000/api/aggregator
 
 Merci d'utiliser notre API ! Si vous avez des questions ou des problèmes, n'hésitez pas à créer une issue sur GitHub.
